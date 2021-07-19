@@ -1,0 +1,184 @@
+@media screen and (max-width:768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+    body,
+    #slideshow {
+        width: 100vw;
+
+    }
+
+    .sp-only {
+        display: block;
+    }
+
+    .pc-only,
+    .subnav {
+        display: none;
+    }
+
+    #logotext h1 {
+        font-size: 7vw;
+        text-align: right;
+        white-space: pre;
+        margin: 5px 0 0;
+    }
+
+    #logotext h2 {
+        font-size: 4vw;
+        margin: 0 0 -7vw
+    }
+
+    #logoimg {
+        height: 13vw;
+        width: 12vw;
+    }
+
+    #top-header {
+        text-align: center;
+    }
+
+    nav {
+        background-color: #006a6c;
+        text-align: center;
+        height: 28vw;
+
+    }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        border-collapse: collapse;
+
+    }
+
+    .nav-list li {
+        flex-basis: 25%;
+        border: 1px solid #CEF6E3;
+        height: 13.3vw;
+    }
+
+    .nav-list li:nth-child(n+5) {
+        border-top: none
+    }
+
+
+    .nav-list a{
+        font-size: 3.8vw;
+    }
+
+    #slideshow, .slide {
+        width: 100vw;
+        height: 45vw;
+    }
+    #notice,#public-events,#update-history,#entrance-examination{
+        flex: 100%;
+    }
+    #update-history{
+        order: 1;
+    }
+    
+    div.button1 li{
+        width: 40vw;
+        margin: 2vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

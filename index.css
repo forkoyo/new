@@ -1,0 +1,44 @@
+﻿@charset"utf-8";
+
+
+.slide {
+    height: 450px;
+    width: 100%;
+}
+
+
+
+/*h1 {
+   padding: 10px 5px 0px 10px;
+   font-size: 35px;
+   text-align: left;
+   vertical-align: middle;
+   font-family: 'serif', serif;
+}*/
+
+#slideshow {
+    position: relative;
+    width: 960px;
+    /* 画像の横幅に合わせて記述 */
+    height: 450px;
+    /* 画像の高さに合わせて記述 */
+}
+
+#slideshow img {
+    position: absolute;
+    z-index: 8;
+    opacity: 0.0;
+    top: 0px;
+    left: 0px;
+}
+
+#slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+
+#slideshow img.last-active {
+    z-index: 9;
+}
+
+

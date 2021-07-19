@@ -1,0 +1,102 @@
+﻿@charset"utf-8";
+
+ul li{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #006a6c;
+    text-align: center;
+    border-top: 3px double #CEF6E3;
+    /* バーの上端線 */
+    border-bottom: 3px double #CEF6E3;
+    /* バーの下端線 */
+    height: 40px;
+}
+
+nav li {
+    width: 13.76%;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    z-index: 100;
+    border-right: 1px solid #CEF6E3;
+}
+
+nav li a {
+    display: block;
+    background-color: #006a6c;
+    /* メニュー項目の背景色 */
+    color: white;
+    /* メニュー項目の文字色 */
+    line-height: 40px;
+    /* メニュー項目のリンクの高さ(「メニュー項目の高さ」と一致させる) */
+    text-align: center;
+    /* メインメニューの文字列の配置(中央寄せ) */
+    text-decoration: none;
+    /* メニュー項目の装飾(下線を消す) */
+    width: 100%;
+    height: 100%;
+}
+
+nav li a:hover {
+    background-color: #88bfbf;
+    /* メニュー項目にマウスが載ったときの背景色 */
+    color: #006a6c;
+    /* メニュー項目にマウスが載ったときの文字色 */
+}
+
+
+
+.subnav {
+    background-color: #fafafa !important;
+    border-width: 1px 1px 0px 1px;
+    /* サブメニュー全体の枠線の太さ */
+    border-style: solid;
+    /* サブメニュー全体の枠線の線種 */
+    border-color: #CEF6E3;
+    /* サブメニュー全体の枠線の色 */
+    position: absolute;
+    display: none;
+
+
+
+}
+
+.subnav li {
+   width: 100%;
+   /* サブメニュー1項目の横幅 */
+   height: 35px;
+   /* サブメニュー1項目の高さ */
+   border-width: 0px 0px 1px 0px;
+   /* サブメニュー1項目の枠線の太さ */
+   border-style: solid;
+   /* サブメニュー1項目の枠線の線種 */
+   border-color: #CEF6E3;
+   /* サブメニュー1項目の枠線の色 */
+}
+
+.subnav li a {
+   background-color: #fafafa;
+   color: #006a6c;
+   font: sans-serif;
+   line-height: 35px;
+   /* サブメニュー1項目の行の高さ(「サブメニュー1項目の高さ」と合わせる) */
+   text-align: left;
+   /* サブメニュー1項目の項目名の配置(左寄せ) */
+   text-indent: 5px;
+   /* サブメニュー1項目の項目名前方の余白 */
+}
+
+ul.subnav a:hover {
+    background-color: #006a6c;
+    /* サブメニュー項目にマウスが載ったときの背景色 */
+    color: #fafafa;
+}
+
+
+nav li:hover > .subnav {
+    display: block;
+}
