@@ -24,11 +24,19 @@
         display: none;
     }
 
+    #top-header{
+    padding: 4vw 3vw 4vw;
+        
+    }
+    
+    
+    
+    
     #logotext h1 {
         font-size: 7vw;
         text-align: right;
         white-space: pre;
-        margin: 5px 0 0;
+        margin: 0.9vw 0 0;
     }
 
     #logotext h2 {
@@ -89,96 +97,5 @@
         width: 40vw;
         margin: 2vw;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
