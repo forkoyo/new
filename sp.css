@@ -97,5 +97,12 @@
         width: 40vw;
         margin: 2vw;
     }
+    
+    footer {
+    top: 1vw;
+    padding: 4vw;
+    font-size: 3vw;
+}
+
 
 }
