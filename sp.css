@@ -24,14 +24,16 @@
         display: none;
     }
 
-    #top-header{
-    padding: 4vw 3vw 4vw;
-        
+    #top-header {
+        padding: 4vw 3vw 4vw;
+
     }
-    
-    
-    
-    
+    .letter-spacing{
+        letter-spacing: 0.27em
+    }
+
+
+
     #logotext h1 {
         font-size: 7vw;
         text-align: right;
@@ -78,31 +80,44 @@
     }
 
 
-    .nav-list a{
+    .nav-list a {
         font-size: 3.8vw;
     }
 
-    #slideshow, .slide {
+    #slideshow,
+    .slide {
         width: 100vw;
         height: 45vw;
     }
-    #notice,#public-events,#update-history,#entrance-examination{
+
+    #notice,
+    #public-events,
+    #update-history,
+    #entrance-examination {
         flex: 100%;
     }
-    #update-history{
+
+    #update-history {
         order: 1;
     }
-    
-    div.button1 li{
+
+    .button1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    div.button1 li {
         width: 40vw;
         margin: 2vw;
+        flex: 50%
     }
-    
+
     footer {
-    top: 1vw;
-    padding: 4vw;
-    font-size: 3vw;
-}
+        top: 1vw;
+        padding: 4vw;
+        font-size: 3vw;
+    }
 
 
 }
