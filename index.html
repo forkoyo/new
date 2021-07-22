@@ -1,65 +1,68 @@
 <!DOCTYPE html>
+<!-- saved from url=(0030)https://forkoyo.github.io/new/ -->
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="Content-Style" cotent="text/css;charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <title>学校法人辰馬育英会　甲陽学院中学校・甲陽学院高等学校</title>
-    <link rel="stylesheet" type="text/css" href="./normalize.css">
-    <link rel="stylesheet" type="text/css" href="./master.css">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    <link rel="stylesheet" type="text/css" href="./dropdown.css">
-    <link rel="stylesheet" type="text/css" href="./table1.css">
-    <link rel="stylesheet" type="text/css" href="./table_title.css">
-    <link rel="stylesheet" type="text/css" href="./button1.css">
-    <link rel="stylesheet" type="text/css" href="./sp.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/master.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/index.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/table1.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/button1.css">
+    <link rel="stylesheet" type="text/css" href="./almost done_files/sp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="./jquery-1.11.3.min.js.ダウンロード"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="./almost done_files/css2" rel="stylesheet">
+    <script type="text/javascript" src="./almost done_files/jquery-1.11.3.min.js.ダウンロード"></script>
+    <script type="text/javascript">
+        function slideSwitch() {
+            var $active = $('#slideshow img.active');
+
+            if ($active.length == 0) $active = $('#slideshow img:last');
+
+            var $next = $active.next().length ? $active.next() : $('#slideshow img:first');
+
+            $active.addClass('last-active');
+
+            $next.css({
+                    opacity: 0.0
+                })
+                .addClass('active')
+                .animate({
+                    opacity: 1.0
+                }, 1000, function() {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        $(function() {
+            setInterval("slideSwitch()", 3000);
+        });
+
+    </script>
 </head>
-<script type="text/javascript">
-    function slideSwitch() {
-        var $active = $('#slideshow img.active');
 
-        if ($active.length == 0) $active = $('#slideshow img:last');
-
-        var $next = $active.next().length ? $active.next() : $('#slideshow img:first');
-
-        $active.addClass('last-active');
-
-        $next.css({
-                opacity: 0.0
-            })
-            .addClass('active')
-            .animate({
-                opacity: 1.0
-            }, 1000, function() {
-                $active.removeClass('active last-active');
-            });
-    }
-
-    $(function() {
-        setInterval("slideSwitch()", 3000);
-    });
-
-</script>
 
 
 <body>
     <header>
-        <div id="top-header">
-            <img id="logoimg" src="./koshochugaku.png">
+        <div class="top-header">
+            <img class="logoimg" src="./almost done_files/koshochugaku.png">
 
-            <div id="logotext">
+            <div class="logotext">
                 <h2>学校法人辰馬育英会</h2>
                 <br>
                 <h1 class="pc-only">甲陽学院中学校・高等学校</h1>
                 <h1 class="sp-only">甲陽学<span class="letter-spacing">院中学校</span></h1>
                 <h1 class="sp-only">高等学校</h1>
             </div>
-            <img id="logoimg" src="./koshokoko.jpg">
+            <img class="logoimg" src="./almost done_files/koshokoko.jpg">
         </div>
 
         <nav>
@@ -109,23 +112,16 @@
     </header>
 
 
-
-
-
-
-
-
-
-
     <div id="slideshow">
-        <img class="slide active" align="BOTTOM" src="./chugakukosha1.jpg" style="opacity: 1;">
-        <img class="slide" align="BOTTOM" src="./chugakukosha3.jpg" style="opacity: 1;">
-        <img class="slide" align="BOTTOM" src="./kokokosha1.jpg" style="opacity: 1;">
-        <img class="slide" align="BOTTOM" src="./kokokosha2.jpg" style="opacity: 1;">
+        <img class="slide active last-active" align="BOTTOM" src="./almost done_files/chugakukosha1.jpg" style="opacity: 1;">
+        <img class="slide active" align="BOTTOM" src="./almost done_files/chugakukosha3.jpg" style="opacity: 0.980147;">
+        <img class="slide" align="BOTTOM" src="./almost done_files/kokokosha1.jpg" style="opacity: 1;">
+        <img class="slide" align="BOTTOM" src="./almost done_files/kokokosha2.jpg" style="opacity: 1;">
     </div>
 
+
     <main>
-        <div id="notice">
+        <div class="notice">
             <h3>お知らせ</h3>
             <div class="button1">
                 <ul>
@@ -143,9 +139,12 @@
             </div>
         </div>
 
-        <div id="public-events">
+        <div class="public-events">
             <h3>2021年度 一般公開行事(予定)</h3>
-            <font size="2"><b>　コロナ禍のため，変更を余儀なくされる場合がございます。<br>　詳細につきましては近づきましたら，ＨＰにアップしますのでご確認ください。</b></font>
+            <font size="2"><b>
+                    <p>　コロナ禍のため，変更を余儀なくされる場合がございます。</p>　
+                    <p>詳細につきましては近づきましたら，ＨＰにアップしますのでご確認ください。</p>
+                </b></font>
             <table class="table1">
                 <tbody>
                     <tr>
@@ -158,23 +157,23 @@
                     </tr>
                     <tr>
                         <th><a href="http://www.koyo.ac.jp/h_onten.html">音楽と展覧の会<br>（高等学校）</a></th>
-                        <td>　９月23日(祝)</td>
-                        <td>　<font size="2"> 2020年度はオンライン開催</font>
+                        <td class="col-2">９月23日(祝)</td>
+                        <td class="col-3">　<font size="2">2020年度はオンライン開催</font>
                         </td>
                     </tr>
                     <tr>
                         <th><a href="http://www.koyo.ac.jp/j_onten.html">音楽と展覧の会<br>（中学校）</a></th>
-                        <td>　11月３日(祝)</td>
-                        <td>　<font size="2"> 2020年度は非公開</font>
+                        <td class="col-2">11月３日(祝)</td>
+                        <td>　<font size="2">2020年度は非公開</font>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div id="update-history">
+        <div class="update-history">
             <h3>更新履歴</h3>
-            <ul>
+            <ul class="no_dot">
                 <p>
                     <font size="2">
                     </font>
@@ -208,11 +207,9 @@
                 </font>
                 <p></p>
             </ul>
-            <br>
-
         </div>
-        <br>
-        <div id="entrance-examination">
+
+        <div class="entrance-examination">
             <h3>2021年度 甲陽学院中学校 校舎見学会 ・ 入試説明会</h3>
             <font size="2"><b>　コロナ禍のため，変更を余儀なくされる場合がございます。<br>　詳細につきましては近づきましたら，ＨＰにアップしますのでご確認ください。</b></font>
             <table class="table1">
@@ -221,36 +218,49 @@
                         <th><a href="http://www.koyo.ac.jp/setumeikai.html">校舎見学会</a><br>
                             <font color="red"><b>予約受付中</b></font>
                         </th>
-                        <td>　８月７日(土) <br>　　９：00～13：30</td>
-                        <td>（場所）中学校<br>　・完全予約制です<br>　・定員になり次第締め切らせて<br>　いただきますのでご了承ください。</td>
+                        <td class="col-2">８月７日(土) <br>
+                            ９：00～13：30
+                        </td>
+                        <td class="col-3">（場所）中学校
+                            <ul>
+                                <li>完全予約制です</li>
+                                <li>定員になり次第締め切らせていただきますのでご了承ください。</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <th rowspan="3"><a href="http://www.koyo.ac.jp/setumeikai.html">入試説明会</a><br>３日間とも同一内容</th>
-                        <td>　９月25日(土)</td>
-                        <td>（場所）中学校</td>
+                        <td class="col-2">９月25日(土)</td>
+                        <td class="col-3">（場所）中学校</td>
                     </tr>
                     <tr>
-                        <td>　10月16日(土)</td>
-                        <td>（場所）中学校</td>
+                        <td class="col-2">10月16日(土)</td>
+                        <td class="col-3">（場所）中学校</td>
                     </tr>
                     <tr>
-                        <td>　11月13日(土)</td>
-                        <td>（場所）中学校</td>
+                        <td class="col-2">11月13日(土)</td>
+                        <td class="col-3">（場所）中学校</td>
                     </tr>
                     <tr>
-                        <td colspan="3">　・駐車場がありませんので、公共の交通機関をご利用下さい。<br>　・上履きをご持参下さい。</td>
+                        <td colspan="3">
+                            <ul>
+                                <li>駐車場がありませんので、公共の交通機関をご利用下さい。</li>
+                                <li>上履きをご持参下さい。</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
-            <br><br><br>
         </div>
     </main>
 
     <footer>
-        <address>学校法人辰馬育英会 <br class="sp-only">甲陽学院中学校兵庫県西宮市中葭原町2−15 <br class="sp-only">tel:0798-33-5012 fax:0798-33-6010</address>
-        <br>
+        <address>学校法人辰馬育英会 <br class="sp-only">甲陽学院中学校兵庫県西宮市中葭原町2−15 <br class="sp-only">tel:0798-33-5012 fax:0798-33-6010</address><br>
         <address>甲陽学院高等学校 兵庫県西宮市角石町3－138 <br class="sp-only">tel:0798-73-3011 fax:0798-73-1559</address>
     </footer>
+
+
+
 </body>
 
 </html>
