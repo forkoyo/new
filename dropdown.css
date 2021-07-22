@@ -1,10 +1,11 @@
-﻿@charset"utf-8";
+@charset"utf-8";
 
-ul li{
+    /*　ヘッダーのリスト　*/
+
+ul,li {
     margin: 0;
     padding: 0;
 }
-
 
 nav {
     background-color: #006a6c;
@@ -16,8 +17,12 @@ nav {
     height: 40px;
 }
 
+nav ul{
+    display: flex;
+}
+
 nav li {
-    width: 13.76%;
+    flex-basis:  calc(100%/7);
     display: inline-block;
     list-style-type: none;
     position: relative;
@@ -66,28 +71,28 @@ nav li a:hover {
 }
 
 .subnav li {
-   width: 100%;
-   /* サブメニュー1項目の横幅 */
-   height: 35px;
-   /* サブメニュー1項目の高さ */
-   border-width: 0px 0px 1px 0px;
-   /* サブメニュー1項目の枠線の太さ */
-   border-style: solid;
-   /* サブメニュー1項目の枠線の線種 */
-   border-color: #CEF6E3;
-   /* サブメニュー1項目の枠線の色 */
+    width: 100%;
+    /* サブメニュー1項目の横幅 */
+    height: 35px;
+    /* サブメニュー1項目の高さ */
+    border-width: 0px 0px 1px 0px;
+    /* サブメニュー1項目の枠線の太さ */
+    border-style: solid;
+    /* サブメニュー1項目の枠線の線種 */
+    border-color: #CEF6E3;
+    /* サブメニュー1項目の枠線の色 */
 }
 
 .subnav li a {
-   background-color: #fafafa;
-   color: #006a6c;
-   font: sans-serif;
-   line-height: 35px;
-   /* サブメニュー1項目の行の高さ(「サブメニュー1項目の高さ」と合わせる) */
-   text-align: left;
-   /* サブメニュー1項目の項目名の配置(左寄せ) */
-   text-indent: 5px;
-   /* サブメニュー1項目の項目名前方の余白 */
+    background-color: #fafafa;
+    color: #006a6c;
+    font: sans-serif;
+    line-height: 35px;
+    /* サブメニュー1項目の行の高さ(「サブメニュー1項目の高さ」と合わせる) */
+    text-align: left;
+    /* サブメニュー1項目の項目名の配置(左寄せ) */
+    text-indent: 5px;
+    /* サブメニュー1項目の項目名前方の余白 */
 }
 
 ul.subnav a:hover {
@@ -95,7 +100,6 @@ ul.subnav a:hover {
     /* サブメニュー項目にマウスが載ったときの背景色 */
     color: #fafafa;
 }
-
 
 nav li:hover > .subnav {
     display: block;
