@@ -1,3 +1,7 @@
+@charset"utf-8";
+
+    /*レスポンシブ対応*/
+
 @media screen and (max-width:768px) {
 
     * {
@@ -7,47 +11,51 @@
     body,
     #slideshow {
         width: 100vw;
+    }
 
+    main {
+        margin: 0 3vw;
     }
 
     .sp-only {
         display: block;
     }
 
-    .pc-only,
-    .subnav {
+    .pc-only {
         display: none;
     }
 
-    #top-header {
+    .top-header {
         padding: 4vw 3vw 4vw;
 
     }
-    .letter-spacing{
-        letter-spacing: 0.27em
+
+    .letter-spacing {
+        letter-spacing: 0.3em
     }
 
 
 
-    #logotext h1 {
+    .logotext h1 {
         font-size: 7vw;
         text-align: right;
         white-space: pre;
         margin: 0.9vw 0 0;
     }
 
-    #logotext h2 {
+    .logotext h2 {
         font-size: 4vw;
-        margin: 0 0 -vw
+        font-family: "游明朝", "ヒラギノ明朝 Pro", serif;
     }
 
-    #logoimg {
+    .logoimg {
         height: 13vw;
         width: 12vw;
     }
 
-    #top-header {
+    .top-header {
         text-align: center;
+        margin-bottom: 3vw;
     }
 
     nav {
@@ -79,20 +87,24 @@
         font-size: 3.8vw;
     }
 
+    nav li:hover > .subnav {
+        display: none;
+    }
+
     #slideshow,
     .slide {
         width: 100vw;
         height: 45vw;
     }
 
-    #notice,
-    #public-events,
-    #update-history,
-    #entrance-examination {
+    .notice,
+    .public-events,
+    .update-history,
+    .entrance-examination {
         flex: 100%;
     }
 
-    #update-history {
+    .update-history {
         order: 1;
     }
 
@@ -102,7 +114,7 @@
         justify-content: space-around;
     }
 
-    div.button1 li {
+    .button1 li {
         width: 40vw;
         margin: 2vw;
         flex: 50%
